@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device=width" , initial-scale="1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather Ap</title>
+  </head>
+  <style>
+    body {
+      display: block;
+      text-align: center;
+    }
+    h1 {
+      color: #1a64d6;
+      text-align: center;
+      font-size: 30px;
+    }
+    h2 {
+      text-align: center;
+      font-size: 30px;
+    }
+    button {
+      color: white;
+      font-size: medium;
+      display: block;
+      text-align: center;
+      background-color: #1a64d6;
+      padding: 15px;
+      margin: 0 auto; /*no need for text-align:center,this works just fine*/
+      border: 1px solid #0d4394;
+      border-radius: 25px /50%;
+      box-shadow: 2px 2px 4px #0d4394;
+      transition: 200ms ease-in-out;
+      cursor: pointer;
+    }
+    button:hover {
+      background: hsl(13, 73%, 35%);
+    }
+    ul {
+      list-style-type: none;
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+      padding: 0; /*helps centre align the forecast*/
+    }
+    li {
+      padding: 13px;
+      border-radius: 10px;
+      margin: 0 auto;
+      max-width: 300px;
+      text-align: center;
+    }
+    li:hover {
+      background: #fffbef;
+      transition: 200ms ease-in-out;
+    }
+    p {
+      font-family: monospace;
+      opacity: 0.6;
+    }
+  </style>
+  <body>
+    <h1>
+      🌤
+      <br />
+      Currently 21&deg; in Tokyo
+    </h1>
+    <h2>
+      13&deg; /
+      <strong> 23&deg; </strong>
+    </h2>
+    <ul>
+      <li>
+        <h3>🌧 Tomorrow</h3>
+        <p>
+          10&deg; /
+          <strong> 22&deg; </strong>
+        </p>
+      </li>
+      <li>
+        <h3>🌥 Saturday</h3>
+        <p>
+          15&deg; /
+          <strong> 17&deg; </strong>
+        </p>
+      </li>
+      <li>
+        <h3>☀ Sunday</h3>
+        <p>
+          25&deg; /
+          <strong> 28&deg; </strong>
+        </p>
+      </li>
+    </ul>
+    <button>Change city</button>
+    <p>Coded by Ann Njuki</p>
+    <script>
+      function sayHi() {
+        // Click is the most common event type but you can also use click | mouseenter | mouseleave | mousedown | mouseup | mousemove | keydown | keyup.
+        alert("hi");
+      }
+
+      let Changecitybutton = document.querySelector(".button");
+      element.addEventListener("click", sayHi);
+      function add(x, y) {
+        return x + y;
+      }
+
+      function getFullName(firstName, lastName) {
+        let fullName = firstName + " " + lastName;
+        return fullName;
+      }
+
+      let userFullName = getFullName("Kate", "Robinson");
+      alert(userFullName); // Kate Robinson
+      alert(getFullName("Julie", "Smith")); // Julie Smith
+    </script>
+  </body>
+</html>
